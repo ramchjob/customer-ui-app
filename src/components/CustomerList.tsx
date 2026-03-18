@@ -7,7 +7,7 @@ export const CustomerList = ({ customers }: { customers: Customer[] }) => {
            
             {customers.map((customer) => (
                 <div key={customer.id}>
-                    <p>{customer.name}</p>
+                    <p>{customer.firstName} {customer.lastName}</p>
                 </div>
             ))}
         </div>
